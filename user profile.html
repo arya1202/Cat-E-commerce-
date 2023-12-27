@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Kart - User Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #2d2b2b;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #2d2b2b;
+            border-bottom: 2px solid #2d2b2b;
+            padding-bottom: 10px;
+        }
+
+       
+        .user-info {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .user-info h3 {
+            margin-bottom: 20px;
+        }
+
+        .user-info p {
+            margin-bottom: 10px;
+        }
+
+        .edit-profile-form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            background-color: #2d2b2b;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+    <h1>Welcome to Arya Kart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Shopping Cart.html">Cart</a>
+        <a href="user account login.html">Login</a>
+    </nav>
+</header>
+
+
+<section>
+    <h2>User Profile</h2>
+
+    <div class="user-info">
+        <h3>Cat Cuddler</h3>
+        <p><strong>Name:</strong>Cat Cutie</p>
+        <p><strong>Email:</strong> catcutie@example.com</p>
+        <p><strong>Address:</strong> Cat villa, Catcity</p>
+    </div>
+
+    <div class="edit-profile-form">
+        <h3>Edit Profile</h3>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" name="edit-name" value="Cat Cutie" required>
+            </div>
+            <div class="form-group">
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" name="edit-email" value="catcutie@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="edit-address">Address:</label>
+                <input type="text" id="edit-address" name="edit-address" value="Cat villa, Catcity" required>
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    &copy; 2023 Arya Kart. All rights reserved.
+</footer>
+
+</body>
+</html>

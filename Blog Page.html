@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +46,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2, h3 {
+        h2,
+        h3 {
             color: #2d2b2b;
             border-bottom: 2px solid #2d2b2b;
             padding-bottom: 10px;
@@ -56,9 +58,9 @@
         }
 
         .blog-post img {
-            max-width: 100%;
+            max-width: 100%; /* Make images responsive */
             height: auto;
-            border-radius: 5px;
+            border-radius: 8px; /* Make images slightly rounder */
             margin-bottom: 15px;
         }
 
@@ -82,47 +84,45 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            clear: both; /* Clear the float to prevent overlapping with content */
         }
-
-        </style>
+    </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to Arya Kart</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Featured Products.html">Products</a>
-        <a href="Shopping Cart.html">Cart</a>
-        <a href="user account login.html">Login</a>
-    </nav>
-</header>
+    <header>
+        <h1>Welcome to Arya Kart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Featured Products.html">Products</a>
+            <a href="Shopping Cart.html">Cart</a>
+            <a href="user account login.html">Login</a>
+        </nav>
+    </header>
 
-<section>
-    <h2>  The Fascinating World of Cats</h2>
+    <section>
+        <h2>The Fascinating World of Cats</h2>
 
-    
-    <div class="blog-post">
-        <img src="cat1.jpg" alt="Blog Post 1">
-        <h3>The Purr-fect Companions</h3>
-        <p>One of the most enchanting features of cats is their soothing purr. Often associated with contentment, a cat's purr has therapeutic effects on humans. It's no wonder why having a purring cat curled up on your lap can instantly lift your spirits and melt away stress.</p>
-        <a href="#">Read More</a>
-    </div>
+        <div class="blog-post">
+            <img src="cat1.jpg" alt="Blog Post 1">
+            <h3>The Purr-fect Companions</h3>
+            <p>One of the most enchanting features of cats is their soothing purr. Often associated with contentment, a cat's purr has therapeutic effects on humans. It's no wonder why having a purring cat curled up on your lap can instantly lift your spirits and melt away stress.</p>
+            <a href="Product Details.html">Read More</a>
+        </div>
 
-    <div class="blog-post">
-        <img src="cat3.jpg" alt="Blog Post 2">
-        <h3>The Joy of Play</h3>
-        <p>Cats are perpetual kittens at heart. Whether chasing after a feather toy, pouncing on a crinkly ball, or engaging in a spirited game of hide-and-seek, cats inject an infectious enthusiasm into their playtime. Watching a cat revel in the simple joys of play is a reminder to find delight in the little things.</p>
-        <a href="#">Read More</a>
-    </div>
-</section>
+        <div class="blog-post">
+            <img src="cat3.jpg" alt="Blog Post 2">
+            <h3>The Joy of Play</h3>
+            <p>Cats are perpetual kittens at heart. Whether chasing after a feather toy, pouncing on a crinkly ball, or engaging in a spirited game of hide-and-seek, cats inject an infectious enthusiasm into their playtime. Watching a cat revel in the simple joys of play is a reminder to find delight in the little things.</p>
+            <a href="Product Details.html">Read More</a>
+        </div>
+    </section>
 
-<footer>
-    &copy; 2023 Arya Kart. All rights reserved.
-</footer>
+    <footer>
+        &copy; 2023 Arya Kart. All rights reserved.
+    </footer>
 
 </body>
+
 </html>

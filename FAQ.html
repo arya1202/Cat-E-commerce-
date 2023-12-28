@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Kart - FAQ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #2d2b2b;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #2d2b2b;
+            border-bottom: 2px solid #2d2b2b;
+            padding-bottom: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .faq-question:hover {
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .cat-joke {
+            font-style: italic;
+            color: #990099;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Arya Kart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Featured Products.html">Products</a>
+        <a href="Shopping Cart.html">Cart</a>
+        <a href="user account login.html">Login</a>
+    </nav>
+</header>
+
+
+<section>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">1. How do I place an order?</div>
+        <div class="faq-answer">
+            To place an order, follow these simple steps: pretend you're a cat hunting for the purr-fect product, pounce on the "Add to Cart" button, and gracefully checkout. Just avoid knocking the keyboard off the table – cats are notorious for that! 🐾
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">2. Can I modify or cancel my order?</div>
+        <div class="faq-answer">
+            Modifying or canceling an order is trickier than convincing a cat to take a bath. Once your order is in, it's on a mission of its own. So, double-check your cart and make sure it's purr-fect before hitting that "Confirm" button! 😺
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">3. Are your products cat-approved?</div>
+        <div class="faq-answer">
+            Absolutely! Our products are tested by the most discerning feline critics. If a cat doesn't give it a paws-up, it doesn't make the cut. And remember, every purchase comes with a free virtual catnip – your kitty will thank you later! 🌿🐱
+        </div>
+    </div>
+
+  
+
+</section>
+
+
+<footer>
+    &copy; 2023 Arya Kart. All rights reserved.
+</footer>
+<script>
+    function toggleAnswer(element) {
+        var answer = element.nextElementSibling;
+        answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

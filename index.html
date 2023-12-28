@@ -75,159 +75,200 @@
         .photo:hover {
             transform: scale(1.05);
         }
+        .search-bar {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .search-button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+     
+    section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        border: 2px solid #555;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    a:hover {
+        background-color: #e26363;
+        color: #fff;
+    }
+    /* Your existing CSS styles */
+
+.photo {
+    position: relative;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover img {
+    transform: scale(1.05);
+}
+
+.photo-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+ 
+</style>
+
     </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to Arya Kart</h1>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search Cutie Cats...">
+            <button class="search-button">Search</button>
+        </div>
 
-<!-- Header -->
-<header>
-    <h1>Welcome to Arya Kart</h1>
-    <nav>
-        <a href="Featured Products.html">Products</a>
-        <a href="Shopping Cart.html">Cart</a>
-        <a href="user account login.html">Login</a>
-    </nav>
-</header>
+        <nav>
+            <a href="Product Details.html" target="_blank">Products</a>
+            <a href="Shopping Cart.html" target="_blank">Cart</a>
+            <a href="user account login.html" target="_blank">Login</a>
+        </nav>
+    </header>
 
-<section>
-    <h2>Featured Products</h2>
-    <div class="photo-grid">
-        <div class="photo">
-            <img src="cat1.jpg" alt="cutu cat">
+    <section>
+        <h2>Featured Products</h2>
+        <div class="photo-grid">
+            <div class="photo">
+                <img src="cat1.jpg" alt="cute cat">
+                <p class="photo-description">Adorable Billa</p>
+            </div>
+            <div class="photo">
+                <img src="cat2 (2).jpg" alt="cute cat">
+                <p class="photo-description">Playful Billa</p>
+            </div>
+            <div class="photo">
+                <img src="cat3.jpg" alt="cute cat">
+                <p class="photo-description">Fluffy Billa</p>
+            </div>
+            <div class="photo">
+                <img src="cat4.jpg" alt="cute Billa">
+                <p class="photo-description">Billa Beauty</p>
+            </div>
+            <div class="photo">
+                <img src="cat5.jpg" alt="cute Billa">
+                <p class="photo-description">Majestic Cat</p>
+            </div>
+            <div class="photo">
+                <img src="cat6.jpg" alt="cute cat">
+                <p class="photo-description">Cuddly Companion</p>
+            </div>
+            <div class="photo">
+                <img src="cat8.jpg" alt="cute cat">
+                <p class="photo-description">Graceful Billa</p>
+            </div>
+            <div class="photo">
+                <img src="cat9.jpg" alt="cute cat">
+                <p class="photo-description">Curious Explorer</p>
+            </div>
         </div>
-        <div class="photo">
-            <img src="cat2 (2).jpg" alt="cutu cat">
-        </div>
-        <div class="photo">
-            <img src="cat3.jpg" alt="cutu cat">
-        </div>
-        <div class="photo">
-            <img src="cat4.jpg" alt="cutu cat">
-        </div>
-        <div class="photo">
-            <img src="cat5.jpg" alt="cutu cat">
-        </div>
-        <div class="photo">
-            <img src="cat6.jpg" alt="cutu cat">
-        </div>
-        <div class="photo">
-            <img src="cat8.jpg" alt="cutu cat">
-        </div>
-        <div class="photo">
-            <img src="cat9.jpg" alt="cutu cat">
-        </div>
-        <div class="photo">
-            <img src="cat7.jpg" alt="cutu cat">
-        </div>
-    </div>
-</section>
-
-<section>
-    <a href="Other Features.html">
-        <h3>Other Features</h3>
-    </a>
-
-</section>
+    </section>
 <section>
     <a href="Product Details.html">
         <h3>Product details</h3>
     </a>
 
-</section>
-
-<section>
     <a href="Shopping Cart.html">
         <h3>Shopping Cart</h3>
     </a>
 
-</section>
-
-<section>
     <a href="checkout.html">
         <h3>Checkout</h3>
     </a>
 
-</section>
-
-<section>
     <a href="order confirmation.html">
         <h3>Order Confirmation</h3>
     </a>
 
-</section>
-<section>
+
     <a href="user account login.html">
         <h3>User Account Login</h3>
     </a>
 
-</section>
-<section>
+
     <a href="user profile.html">
         <h3>User Profile</h3>
     </a>
 
-</section>
-
-<section>
     <a href="Wishlist.html">
         <h3>Wishlist</h3>
     </a>
 
-</section>
-<section>
     <a href="Category Page.html">
         <h3>Category Page</h3>
     </a>
 
-</section>
-
-<section>
     <a href="Blog Page.html">
         <h3>Blog Page</h3>
     </a>
 
-</section>
-<section>
     <a href="Contact Us Page.html">
         <h3>Contact Us</h3>
     </a>
 
-</section>
-<section>
     <a href="FAQ.html">
         <h3>FAQ</h3>
     </a>
 
-</section>
-<section>
     <a href="About Us.html">
         <h3>About Us</h3>
     </a>
 
-</section>
 
-<section>
     <a href="Privacy Policy.html">
         <h3>Privacy Policy</h3>
     </a>
 
-</section>
-
-<section>
     <a href="Terms of Service.html">
         <h3>Terms of Service</h3>
     </a>
 
-</section>
-
-<section>
     <a href="Shipping and Returns.html">
         <h3>Shipping and Returns</h3>
     </a>
 
-</section>
 
-<section>
     <a href="Track Order.html">
         <h3>Track Order</h3>
     </a>

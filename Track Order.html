@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Kart - Track Order</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #2d2b2b;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #2d2b2b;
+            border-bottom: 2px solid #2d2b2b;
+            padding-bottom: 10px;
+        }
+
+        .track-order-form {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .order-status {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9a9a9;
+            border-radius: 5px;
+        }
+
+        .status-update {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Arya Kart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Featured Products.html">Products</a>
+        <a href="Shopping Cart.html">Cart</a>
+        <a href="user account login.html">Login</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Track Your Order</h2>
+
+    <div class="track-order-form">
+        <label for="orderNumber">Order Number:</label>
+        <input type="text" id="orderNumber" placeholder="Enter your order number">
+        <button onclick="trackOrder()">Track Order</button>
+    </div>
+
+    <div class="order-status" id="orderStatus">
+        <h3>Order Status:</h3>
+        <p>Your order is being processed. Please check back for updates.</p>
+    </div>
+
+   
+    <div class="status-update" id="statusUpdate">
+        <h3>Latest Update:</h3>
+        <p>No updates available at the moment. Stay tuned!</p>
+    </div>
+
+</section>
+
+<footer>
+    &copy; 2023 Arya Kart. All rights reserved.
+</footer>
+
+<script>
+    function trackOrder() {
+     
+        var orderNumber = document.getElementById('orderNumber').value;
+        var orderStatus = document.getElementById('orderStatus');
+        var statusUpdate = document.getElementById('statusUpdate');
+
+
+        orderStatus.innerHTML = `<h3>Order Status:</h3>
+                                 <p>Your cat (${orderNumber}) is on its way to you. Expected delivery date: Jan-purry 25, 2023.</p>`;
+
+    
+        statusUpdate.innerHTML = `<h3>Latest Update:</h3>
+                                  <p>Your order has been dispatched from our warehouse and is in transit. Exciting times ahead!</p>`;
+    }
+</script>
+
+</body>
+</html>
